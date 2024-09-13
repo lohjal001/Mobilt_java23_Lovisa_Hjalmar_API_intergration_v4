@@ -8,7 +8,7 @@ import android.widget.Button
 import androidx.fragment.app.Fragment
 
 
-class CodeFragment : Fragment() {
+class CodeFragment : Fragment(R.layout.fragment_code) {
 
     override fun onCreateView(
         inflater: LayoutInflater,
