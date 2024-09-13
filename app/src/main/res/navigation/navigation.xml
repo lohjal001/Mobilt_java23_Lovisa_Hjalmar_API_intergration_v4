@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/mainActivity">
+
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.mobilt_java23_lovisa_hjalmar_api_intergration_v4.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <activity
+        android:id="@+id/colorActivity"
+        android:name="com.example.mobilt_java23_lovisa_hjalmar_api_intergration_v4.ColorActivity"
+        android:label="activity_color"
+        tools:layout="@layout/activity_color" />
+    <fragment
+        android:id="@+id/codeFragment"
+        android:name="com.example.mobilt_java23_lovisa_hjalmar_api_intergration_v4.CodeFragment"
+        android:label="fragment_code"
+        tools:layout="@layout/fragment_code" >
+        <action
+            android:id="@+id/action_codeFragment_to_colorActivity"
+            app:destination="@id/colorActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/schemeFragment"
+        android:name="com.example.mobilt_java23_lovisa_hjalmar_api_intergration_v4.SchemeFragment"
+        android:label="fragment_scheme"
+        tools:layout="@layout/fragment_scheme" >
+        <action
+            android:id="@+id/action_schemeFragment_to_colorActivity"
+            app:destination="@id/colorActivity" />
+    </fragment>
+
+</navigation>
