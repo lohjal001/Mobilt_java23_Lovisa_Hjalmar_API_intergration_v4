@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.mobilt_java23_lovisa_hjalmar_api_intergration_v4.HomeFragment"
+        android:name="com.example.colorapp.HomeFragment"
         android:label="Home">
         <action
             android:id="@+id/action_homeFragment_to_inputFragment"
@@ -15,7 +15,7 @@
 
     <fragment
         android:id="@+id/inputFragment"
-        android:name="com.example.mobilt_java23_lovisa_hjalmar_api_intergration_v4.InputFragment"
+        android:name="com.example.colorapp.InputFragment"
         android:label="Input">
         <action
             android:id="@+id/action_inputFragment_to_resultFragment"
@@ -24,7 +24,7 @@
 
     <fragment
         android:id="@+id/resultFragment"
-        android:name="com.example.mobilt_java23_lovisa_hjalmar_api_intergration_v4.ResultFragment"
+        android:name="com.example.colorapp.ResultFragment"
         android:label="Result">
         <argument
             android:name="colorCode"
@@ -36,6 +36,6 @@
 
     <fragment
         android:id="@+id/favoritesFragment"
-        android:name="com.example.mobilt_java23_lovisa_hjalmar_api_intergration_v4.FavoritesFragment"
+        android:name="com.example.colorapp.FavoritesFragment"
         android:label="Favorites" />
 </navigation>
